@@ -1,0 +1,330 @@
+/*####################
+        GLOBAL
+#####################*/
+
+* {
+
+    box-sizing: border-box;
+}
+
+html {
+    /*    font-family: 'Raleway', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+p {
+    color: #9b9b9b;
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.main-color {
+    color: #7cc576;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+.break {
+    display: block;
+}
+
+.cover {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.clear {
+    clear: both;
+}
+
+/*####################
+        BUTTONS
+#####################*/
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    background-color: #7cc576;
+    padding: 15px 25px;
+    border-radius: 40px;
+    border: 5px solid #7cc576;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #7cc576;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+
+/*####################
+        HEADER
+#####################*/
+
+.header {
+    padding: 50px 0;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header__name {
+    color: #9b9b9b;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header__logo {
+	margin-right: 10px;
+}
+
+.header__logo {
+	vertical-align: middle;
+}
+
+.nav {
+    min-width: 430px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.nav__link {
+    color: #9b9b9b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav__link:hover {
+    color: #7cc576;
+}
+
+
+/*########################
+            HOME
+########################*/
+
+.home {
+    background: url(images/bg_header.jpg) no-repeat center;
+    background-size: cover;
+    height: 530px;
+}
+
+.home__header {
+    text-align: center;
+    height: 100%;
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__title {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.home__text {
+    font-size: 2rem;
+    color: #ddd;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin: 40px 0;
+}
+
+
+
+/*############################
+           ABOUT
+#############################*/
+
+.about {
+    text-align: center;
+}
+
+.about__header {
+    color: #222;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+    margin: 100px 0 20px;
+}
+
+.about__boxes {
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 0 100px;
+}
+
+.about__box {
+    flex-basis: 290px;
+}
+
+.about__icon > img {
+    height: 52px;
+    /*    Mam różne wysokości grafik */
+     CHANGES: Zmienic icony na SVG
+}
+
+.about__title {
+    color: #222;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    margin: 40px 0 20px;
+}
+
+.about__text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+
+/*############################
+            BLOG
+#############################*/
+
+.blog-left {
+    background: url(images/blog_bg.jpg) right no-repeat;
+    width: 25%;
+    background-size: cover;
+}
+
+.blog-right {
+    background: url(images/blog_main.jpg) center no-repeat;
+    background-size: cover;
+    width: 75%;
+}
+
+.blog-bg {
+    height: 670px;
+    float: left;
+}
+
+.blog {
+    padding: 100px 0 0 10%;
+    max-width: 850px;
+}
+
+.blog__title {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.blog__text {
+    line-height: 1.6;
+    margin: 45px 0 30px;
+}
+
+.blog__align {
+    display: flex;
+    align-items: center;
+}
+
+.blog__align--last{
+    margin-bottom: 20px;
+}
+
+/*############################
+            PORTFOLIO
+#############################*/
+
+.portfolio-wrapper {
+	background: url(images/bg_tablet.png) right center no-repeat;
+    margin: 100px 0;
+}
+
+.portfolio-sharing {
+    color: #222;
+    font-size: 1.8em;
+    font-weight: 900;
+	text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.project {
+    text-align: center;
+}
+
+.project__title {
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.portfolio {
+	max-width: 550px;
+    margin-top: 90px;
+}
+
+.portfolio__desc, .portfolio__last {
+    line-height: 1.6;
+}
+
+.portfolio__desc {
+	padding: 22px 0;
+}
+
+.portfolio__box {
+    height: 85px;
+	display: flex;
+    align-items: center;
+}
+
+.portfolio__img {
+    width: 75px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 50%;
+}
+
+.portfolio__title {
+	padding-bottom: 8px;
+}
+
+.portfolio__link {
+    color: #7cc576;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.portfolio__link:hover {
+	color: #222;
+}
+
+.portfolio__last {
+	margin: 20px 0;
+}
