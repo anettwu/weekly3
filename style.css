@@ -179,8 +179,18 @@ body {
     padding: 40px 0 20px;
 }
 
-.boxes__box {
+.boxes__box--midle {
     padding: 0 50px;
+}
+
+.boxes__box {
+    padding: 10px 0;
+    transition: .2s;
+}
+
+.boxes__box:hover {
+    cursor: pointer;
+    background-color: #f9f9f9;
 }
 
 /* #######################
@@ -251,6 +261,12 @@ body {
 .project__block {
     display: flex;
     align-items: center;
+    transition: .2s;
+}
+
+.project__block:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
 }
 
 .project__box {
@@ -335,9 +351,30 @@ body {
 }
 
 .client__answer {
+    position: relative;
     max-width: 640px;
     padding: 40px;
     background-color: #f9f9f9;
+}
+
+.client__answer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.client__box:nth-child(odd) .client__answer::before {
+    left: -20px;
+    border-right: 20px solid #f9f9f9;
+}
+
+.client__box:nth-child(even) .client__answer::before {
+    right: -20px;
+    border-left: 20px solid #f9f9f9;
 }
 
 .client__question {
@@ -389,6 +426,12 @@ body {
 .footer-main__link {
     text-decoration: none;
     color: #fff;
+    transition: .1s;
+}
+
+.footer-main__text--mail:hover,
+.footer-main__link:hover {
+    color: #7cc576;
 }
 
 .footer-main__icon {
@@ -401,6 +444,9 @@ body {
     align-items: center;
     padding-bottom: 15px;
     line-height: 150%;
+    text-decoration: none;
+    color: #fff;
+    transition: .1s;
 }
 
 .footer-main__text--last {
@@ -437,6 +483,7 @@ body {
 .footer-last__google {
     cursor: pointer;
     transition: .2s;
+    color: #222;
 }
 
 .footer-last__tw:hover {

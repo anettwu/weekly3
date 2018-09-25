@@ -23,17 +23,17 @@
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="#" class="nav__link text-small heading-text">home</a></li>
-                    <li><a href="#" class="nav__link text-small heading-text">about</a></li>
-                    <li><a href="#" class="nav__link text-small heading-text">blog</a></li>
-                    <li><a href="#" class="nav__link text-small heading-text">portfolio</a></li>
-                    <li><a href="#" class="nav__link text-small heading-text">contact</a></li>
+                    <li><a href="#home" class="nav__link text-small heading-text">home</a></li>
+                    <li><a href="#about" class="nav__link text-small heading-text">about</a></li>
+                    <li><a href="#blog" class="nav__link text-small heading-text">blog</a></li>
+                    <li><a href="#portfolio" class="nav__link text-small heading-text">portfolio</a></li>
+                    <li><a href="#contact" class="nav__link text-small heading-text">contact</a></li>
                 </ul>
         </div>
         </header>
     </div>
     <!-- SECTION HOME -->
-    <header class="home">
+    <header id="home" class="home">
         <div class="center home__wrap">
             <h2 class="home__title text-xxl heading-text text-light">creative digital solutions</h2>
             <h3 class="home__text text-large text">Proin iaculis purus consequat sem cure.</h3>
@@ -41,23 +41,23 @@
         </div>
     </header>
     <!-- SECTION ABOUT -->
-    <section class="about space center wrap">
+    <section id="about" class="about space center wrap">
         <h2 class="heading-text text-xl text-dark">professional services</h2>
         <h3 class="about__text text-large text">Proin iaculis purus consequat sem cure</h3>
         <div class="boxes">
-            <div>
+            <div class="boxes__box">
                 <img src="images/icon-hearth.png">
                 <div class="boxes__header heading-text text-big text-dark">beautiful design</div>
                 <div class=" text text-small">Proin iaculis purus consequat sem cure digni ssim. Donec
                     porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</div>
             </div>
-            <div class="boxes__box">
+            <div class="boxes__box boxes__box--middle">
                 <img src="images/icon-tablet.png">
                 <div class="boxes__header heading-text text-big text-dark">responsive web</div>
                 <div class="text text-small">Proin iaculis purus consequat sem cure digni ssim. Donec
                     porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</div>
             </div>
-            <div>
+            <div class="boxes__box">
                 <img src="images/icon-graph.png">
                 <div class="boxes__header heading-text text-big text-dark">marketing tools</div>
                 <div class="text text-small">Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -66,7 +66,7 @@
         </div>
     </section>
     <!-- SECTION BLOG -->
-    <article class="blog">
+    <article id="blog" class="blog">
         <div class="blog__left"></div>
         <div class="blog__right">
             <div class="blog__cover space">
@@ -88,7 +88,7 @@
     </article>
     <!-- SECTION PORTFOLIO -->
     <main>
-        <section class="project space">
+        <section id="portfolio" class="project space">
             <div class="wrap">
                 <div class="center">
                     <h2 class="heading-text text-xl text-dark">latest project</h2>
@@ -125,6 +125,7 @@
                 </div>
             </div>
         </section>
+        <!-- SECTION CULTURE -->
         <section class="culture space center">
             <div class="wrap">
                 <h2 class="heading-text text-xl text-dark">culture & values</h2>
@@ -151,13 +152,14 @@
                 </div>
             </div>
         </section>
+        <!-- SECTION CLIENT -->
         <section class="center">
             <div class="wrap space">
                 <h2 class="heading-text text-xl text-dark">our awesome clients</h2>
                 <h3 class="text-large">Proin iaculis purus consequat cure</h3>
                 <div class="client__box">
                     <div class="client__person"></div>
-                    <div class="client__answer">
+                    <div class="client__answer client__answer--odd">
                         <div class="text-extra-large text">"Proin iaculis purus consequat sem cure digni ssim donec
                             porttitora entum suscipit aenean rhoncus. "</div>
                         <div class="mark text-big text">- Jamie Richardson, Founder of Cocoa Media</div>
@@ -165,7 +167,7 @@
                 </div>
                 <div class="client__box">
                     <div class="client__person"></div>
-                    <div class="client__answer ">
+                    <div class="client__answer client__answer--even">
                         <div class="text-extra-large text">"Proin iaculis purus consequat sem cure digni ssim donec
                             porttitora entum suscipit aenean rhoncus. "</div>
                         <div class="mark text-big text">- Kim Thompson, Founder of Rainel</div>
@@ -181,10 +183,9 @@
                 <img src="images/logo_wordpress.png" alt="wordpress">
                 <img src="images/logo_aetuts.png" alt="aetuts">
                 <img src="images/logo_microlancer.png" alt="microlancer">
-
             </div>
         </section>
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="footer-main text-light">
                 <div class="wrap footer-main__boxes">
                     <div class="footer-main__box">
@@ -195,7 +196,7 @@
                                 M1H 3A5</span></p>
                             <p class="footer-main__text"><i class="footer-main__icon demo-icon icon-mobile"></i>(416)
                                 555-5252</p>
-                            <p class="footer-main__text"><i class="footer-main__icon demo-icon icon-mail"></i>hello@treehouse.com</p>
+                            <a href="#" class="footer-main__text footer-main__text--mail"><i class="footer-main__icon demo-icon icon-mail"></i>hello@treehouse.com</a>
                         </address>
                     </div>
                     <div class="footer-main__box">
@@ -209,17 +210,17 @@
                     <div class="footer-main__box">
                         <h3 class="footer-main__heading heading-text text-big">latest tweets</h3>
                         <p class="text-medium footer-main__text footer-main__text--last"><i class="footer-main__icon demo-icon icon-twitter"></i><a class="footer-main__link" href="#">Confucius: Life is really simple, but we insist on making it complicated.<span class="footer-main__break">#famousquotes</span><span class="footer-main__break">8 mins ago</span></a></p>
-                        <p class="text-medium footer-main__text footer-main__text--last"><i class="footer-main__icon demo-icon icon-twitter"></i><a class="footer-main__link" href="#"> Confucius: Life is really simple, but we insist on making it complicated.<span class="footer-main__break">#famousquotes</span><span class="footer-main__break">2 days ago</span></a></p>
+                        <p class="text-medium footer-main__text footer-main__text--last"><i class="footer-main__icon demo-icon icon-twitter"></i><a class="footer-main__link" href="#"> Confucius: Life is really simple, but we insist on making it complicated.<span class="footer-main__break">#freebies #templates</span><span class="footer-main__break">2 days ago</span></a></p>
                     </div>
                 </div>
             </div>
             <div class="footer-last wrap">
                 <p class="text-small">&copy; Copyright 2014 FreebiesXpress.com</p>
                 <div class="footer-last__icons text-xl">
-                    <div><i class="demo-icon footer-last__tw icon-twitter-circled"></i></div>
-                    <div><i class="demo-icon footer-last__fb icon-facebook-circled"></i></div>
-                    <div><i class="demo-icon footer-last__pin icon-pinterest-circled"></i></div>
-                    <div><i class="demo-icon footer-last__google icon-gplus-circled"></i></div>
+                    <a href="https://twitter.com/"><i class="demo-icon footer-last__tw icon-twitter-circled"></i></a>
+                    <a href="https://www.facebook.com/"><i class="demo-icon footer-last__fb icon-facebook-circled"></i></a>
+                    <a href="https://pl.pinterest.com/"><i class="demo-icon footer-last__pin icon-pinterest-circled"></i></a>
+                    <a href="https://plus.google.com/"><i class="demo-icon footer-last__google icon-gplus-circled"></i></a>
                 </div>
             </div>
         </footer>
