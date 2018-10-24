@@ -91,6 +91,10 @@ body {
     transition: .2s;
 }
 
+button:focus {
+    outline: 0;
+}
+
 .btn:hover {
     background-color: #fff;
     color: #3f3f3f;
@@ -175,11 +179,11 @@ body {
     right: 3%;
     width: 20px;
     height: 16px;
-    border: 0;
+    border: none;
     border-top: 2px solid #3f3f3f;
     background-color: transparent;
     transition: transform .2s;
-
+    cursor: pointer;
     display: none;
 }
 
