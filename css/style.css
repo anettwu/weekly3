@@ -97,6 +97,28 @@ body {
     text-shadow: 0 0 0 #fff;
 }
 
+/* Button scroll up to top */
+.up {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    border: 0;
+    background-color: transparent;
+    font-size: 3.5rem;
+    color: #3f3f3f;
+    cursor: pointer;
+    display: none;
+}
+
+.up.active {
+    display: block;
+}
+
+.up:hover {
+    color: #7cc576;
+    transition: .2s ease-out;
+}
+
 /* #######################
             NAVBAR
 ######################### */
@@ -146,9 +168,103 @@ body {
     color: #7cc576;
 }
 
+/* Hamburger menu */
+
+.hamburger {
+    position: relative;
+    right: 3%;
+    width: 20px;
+    height: 16px;
+    border: 0;
+    border-top: 2px solid #3f3f3f;
+    background-color: transparent;
+    transition: transform .2s;
+
+    display: none;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #3f3f3f;
+    /* transform: translateY(10px); */
+    transform: translateY(6px);
+}
+
+.hamburger::after {
+    transition: transform .2s;
+    /* transform: translateY(25px); */
+    transform: translateY(14px);
+}
+
+.hamburger.active {
+    /* transform: rotate(45deg) translateY(5px); */
+    transform: rotate(45deg) translateY(0);
+    border: none;
+}
+
+.hamburger.active::after {
+    /* transform: rotate(-90deg) translateX(-10px); */
+    transform: rotate(-90deg) translateX(-6px);
+}
+
 @media (max-width: 767px) {
+    .nav {
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width: 639px) {
+    .navbar {
+        position: relative;
+        padding: 0 1%;
+        height: 10vh;
+    }
+
+    .nav {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        left: -100%;
+        transition: .5s;
+    }
+
+    .nav.active {
+        left: 0;
+    }
+
     .nav__list {
         flex-direction: column;
+        height: 42vh;
+        font-size: 1.6rem;
+    }
+
+    .nav__item {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 639px) {
+    .navbar {
+        height: 20vh;
+    }
+
+    .nav {
+        top: 20vh;
+    }
+
+    .nav__list {
+        height: 80vh;
     }
 }
 
